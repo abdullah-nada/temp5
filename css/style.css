@@ -1,0 +1,421 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+/*************** header***********************/
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+i {
+  padding-left: 0.2em;
+  cursor: pointer;
+}
+.logo a {
+  font-size: 1em;
+  padding-left: 1.5em;
+  text-transform: capitalize;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 0.8em;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  padding-right: 2em;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.1em;
+  text-transform: capitalize;
+  font-weight: 400;
+  margin-left: 1em;
+  transition: 1s all;
+}
+nav ul li a span {
+  color: red;
+}
+.check {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .logo a {
+    font-size: 0.8em;
+    padding-left: 2.5em;
+  }
+  nav ul li a {
+    font-size: 0.8em;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../photo/the-town-bg-01.jpg);
+  background-size: 100% 115%;
+  position: relative;
+}
+
+.main-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 40%;
+  min-height: 20%;
+}
+
+.main-content h2 {
+  font-size: 3em;
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.main-content p {
+  font-size: 1.5em;
+  margin-top: 0.3em;
+  color: #fff;
+}
+
+.main-content span {
+  display: inline-block;
+  margin-top: 0.4em;
+  color: blue;
+  text-transform: capitalize;
+}
+
+@media (max-width: 992px) {
+  .main-content {
+    text-align: center;
+  }
+  .main-content h2 {
+    font-size: 1em;
+  }
+  .main-content p {
+    font-size: 1em;
+  }
+}
+
+/************intro-section*****************/
+
+.intro-section {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  gap: 3em;
+}
+
+.image-intro img {
+  max-width: 100%;
+}
+
+.info-intro {
+  font-family: sans-serif;
+  width: 50%;
+}
+.info-intro h2 {
+  color: #4169e1;
+  margin-bottom: 35px;
+}
+
+.info-intro p {
+  color: #777;
+  line-height: 1.8;
+  width: 60%;
+}
+
+@media (max-width: 992px) {
+  .intro-section {
+    flex-direction: column;
+  }
+  .image-intro img {
+    width: 100%;
+  }
+  .info-intro p {
+    text-align: center;
+    width: 100%;
+  }
+  .info-intro h2 {
+    text-align: center;
+    margin-top: 1em;
+  }
+  .button {
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+
+/********************work**************/
+
+.work {
+  background: linear-gradient(rgb(227, 152, 127), rgb(92, 100, 140));
+  padding-bottom: 2em;
+  padding-top: 0.5em;
+  margin-top: 2em;
+}
+.card-content {
+  width: 80%;
+  margin: auto;
+  margin-top: 4em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.G-card {
+  text-align: center;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  margin: 0.8em;
+}
+
+.G-card h2 {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #fff;
+}
+.G-card .cs {
+  font-size: 1em;
+  font-weight: bold;
+  color: rgb(10, 10, 117);
+  text-transform: capitalize;
+  letter-spacing: 0.1em;
+}
+
+.G-card p {
+  font-size: 0.9em;
+  color: #fff;
+  margin-top: 0.5em;
+}
+
+@media (max-width: 992px) {
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.5em;
+  }
+  .G-card p {
+    width: 100%;
+    font-size: 0.7em;
+    font-weight: bold;
+    color: #fff;
+  }
+}
+
+/* **********our-work****************** */
+
+.ourwork {
+  margin-top: 2.5em;
+}
+
+.info-our_work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.8em;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: blue;
+}
+
+.info-our_work p {
+  font-size: 1em;
+  font-weight: 300;
+  margin-top: 0.5em;
+}
+.images-our-work {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 0.5em;
+  width: 100%;
+}
+
+.images-our-work img {
+  margin: 0.8em;
+  cursor: pointer;
+  transition: 1s;
+  width: 200px;
+}
+.images-our-work img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 400px) {
+  .info-our_work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .info-our_work p {
+    font-size: 0.7em;
+  }
+}
+
+/************* footer******************* */
+
+footer {
+  background-color: #242121;
+  margin-top: 1em;
+  background: url(../photo/the-town-bg-02.jpg);
+  background-position: 100% 45%;
+  padding-top: 0.2em;
+  padding-bottom: 2em;
+}
+
+.content-footer {
+  width: 80%;
+  margin: auto;
+}
+.contact-footer {
+  font-size: 1.5em;
+  text-transform: capitalize;
+  color: #fff;
+  display: inline-block;
+  margin-top: 1em;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.hr {
+  width: 100%;
+  height: 3px;
+  border: 0 none;
+  background-color: #fff;
+}
+
+.hr::before {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 0.6em;
+  background-color: #fff;
+  border-radius: 0.1em;
+}
+
+.pargraf-footer {
+  color: #fff;
+  line-height: 2;
+  margin-top: 2.1em;
+  font-size: 0.9em;
+}
+
+.info-dtails,
+.info-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  margin-top: 1em;
+}
+.info-dtails h2 {
+  font-size: 1.3em;
+}
+.info-input h2 {
+  font-size: 1.2em;
+}
+.copy-writ h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  margin-top: 2em;
+  color: #fff;
+  padding-top: 4em;
+}
+.copy-writ h3 span {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding-top: 0.2em;
+}
+
+.father {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.inputs-infos input {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 0.5em;
+  color: #fff;
+  margin: 0 20px;
+  outline: none;
+  padding: 6px 20px;
+}
+
+@media (max-width: 992px) {
+  .pargraf-footer {
+    text-align: center;
+  }
+
+  .hr::before {
+    display: flex;
+    justify-content: center;
+  }
+  .info-dtails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .father {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .copy-writ h3 {
+    font-size: 0.7em;
+    font-weight: bolder;
+  }
+  .contact-footer {
+    display: flex;
+    justify-content: center;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 400px) {
+  .copy-writ h3 {
+    font-size: 0.6em;
+    font-weight: bolder;
+  }
+}
